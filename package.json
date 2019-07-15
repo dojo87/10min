@@ -1,0 +1,23 @@
+{
+  "name": "10min",
+  "version": "1.0.0",
+  "description": "10min private blog engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dojo87/10min.git"
+  },
+  "keywords": [
+    "blog",
+    "it"
+  ],
+  "author": "dojo87",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dojo87/10min/issues"
+  },
+  "homepage": "https://github.com/dojo87/10min#readme"
+}
