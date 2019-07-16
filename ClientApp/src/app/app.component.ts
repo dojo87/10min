@@ -31,12 +31,8 @@ export class AppComponent implements AfterViewInit {
     const windowScroll = this.window.pageYOffset;
 
     if (windowScroll >= this.menuInitialPosition) {
-      console.log('sticky');
       this.menuSticky = true;
     } else {
-      console.log(
-        'not sticky. ' + windowScroll + '/' + this.menuInitialPosition
-      );
       this.menuSticky = false;
     }
   }
