@@ -1,0 +1,3 @@
+ServerApp/.env
+**/dist/
+**/node_modules/
