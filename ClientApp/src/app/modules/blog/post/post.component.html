@@ -1,0 +1,5 @@
+<h1>{{ post.title }}</h1>
+<div *ngFor="let section of post.content">
+  <markdown [data]="section.content"></markdown>
+  <p></p>
+</div>

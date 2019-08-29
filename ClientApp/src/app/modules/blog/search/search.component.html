@@ -1,0 +1,11 @@
+<h2 *ngIf="searchTerm">Searching for: {{ searchTerm }}</h2>
+<h2>Posts</h2>
+<ul>
+  <li *ngFor="let post of posts$ | async">
+    <a
+      [routerLink]="['/blog/post', post.slug]"
+      routerLinkActive="router-link-active"
+      >{{ post.title }}</a
+    >
+  </li>
+</ul>

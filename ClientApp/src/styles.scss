@@ -1,7 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
-.sticky {
-  position: fixed !important;
-  top: 0;
-  overflow: hidden;
-  z-index: 10;
+
+#mainNav {
+  &.sticky {
+    position: fixed !important;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+    background-color: rgba(123, 126, 130, 0.2);
+    animation: opacitychange 5s;
+    -webkit-animation: opacitychange 5s;
+  }
+  background-color: rgba(123, 126, 130, 0);
+  transition: 5s linear all;
+}
+
+@keyframes opacitychange {
+  0% {
+    background-color: rgba(123, 126, 130, 0);
+  }
+  100% {
+    background-color: rgba(123, 126, 130, 0.4);
+  }
+}
+
+@-webkit-keyframes opacitychange /* Safari and Chrome - necessary duplicate */ {
+  0% {
+    background-color: rgba(123, 126, 130, 0);
+  }
+  100% {
+    background-color: rgba(123, 126, 130, 0.4);
+  }
+}
+
+#logo {
+  background: url(assets/img/logo.png);
+  width: 290px;
+  height: 104px;
+  background-size: 199px 54px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
